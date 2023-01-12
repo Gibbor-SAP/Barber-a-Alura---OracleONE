@@ -118,6 +118,16 @@ form label, form legend{
 }
 
 .enviar{
+   /*  background: #c78c19;
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 12px;
+ */
     width: 40%;
     padding: 15px 0;
     font-size: 18px;
@@ -130,12 +140,31 @@ form label, form legend{
     cursor:pointer;
 }
 
+/* .enviar:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,
+    red, blue, deeppink, blue,
+    red, blue, deeppink, blue,
+    );
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+ */
+
 .enviar:hover{
     background:rgb(68, 250, 115);
     transform: scale(1.1);
 }
 
-table{
+ table{
     margin: 40px 120px;
 }
 
@@ -173,10 +202,10 @@ td,th{
     margin: 0 0 1em;
 }
 
-/* .principal strong{
+.principal strong{
     font-weight: bold; NEGRITA EN EL TITULO
 }
- */
+
 .principal em{
     font-style: italic;
 }
@@ -260,4 +289,19 @@ td,th{
     }
 
 }
+
+/* NO FUNCIONA
+
+@keyframes glowing {
+    0%{
+        background-position: 0 0;
+    }    
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }  
+}
+*/
 
